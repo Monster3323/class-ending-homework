@@ -43,11 +43,10 @@
     <script>
       var l=document.querySelector('.header-links').querySelectorAll('li');
       var a=1;
-      console.log(l);
       for(var i=0;i<l.length;i++)
       {
         l[i].onclick=function(){
-          l[a-1].className='';
+          l[a-1].className=' ';
           this.className='aaa';
           a=this.getAttribute('index');
         }
@@ -477,7 +476,7 @@
         tishi.style.display='block';
         tishi.className='h';
         setTimeout('tt()',3000);
-      }else if(sch.value==' ')
+      }else if(sch.value=='')
       {
         tishi.innerHTML='未填写学校，请重新填写后再次提交';
         tishi.style.display='block';
