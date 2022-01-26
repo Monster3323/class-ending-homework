@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>百度前端训练营报名官网</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  </head>
+  <body>
+    <header>
+      <div class="tap">
+        <div class="logo">
+          <img src="img/home_logo_new.8e95b3.png" alt="" />
+        </div>
+        <div class="hearder-menu">
+          <ul class="header-links">
+            <li index='1' class="aaa">
+              <a href="#">开发文档</a>
+            </li>
+            <li index='2'>
+              <a href="#">交流中心</a>
+            </li>
+            <li index='3'>
+              <a href="#">服务市场</a>
+            </li>
+            <li index='4'>
+              <a href="#">开源联盟</a>
+            </li>
+            <li index='5'>
+              <a href="#">管理中心</a>
+            </li>
+          </ul>
+        </div>
+        <h4>百度前端训练营2021开营了，赶紧报名吧</h4>
+      </div>
+      
+    </header>
+    <script>
+      var l=document.querySelector('.header-links').querySelectorAll('li');
+      var a=1;
+      console.log(l);
+      for(var i=0;i<l.length;i++)
+      {
+        l[i].onclick=function(){
+          l[a-1].className='';
+          this.className='aaa';
+          a=this.getAttribute('index');
+        }
+      }
+    </script>
+    <div class="application">
+      <div>
+        <div class="school">
+          <div>请选择您的学校</div>
+          <input type="text" placeholder="学校">
+        </div>
+        <div class="data">
+          <div>请选择您入学年份</div>
+          <ul>
+            <li>
+              <button class="yyy">年份</button>
+            </li>
+            <li>
+              <table>
+               <tr>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+               </tr>
+               <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+        <script>
+          var a=2000;
+          var ta=document.querySelector('table');
+          var Td=document.querySelectorAll('td');
+          var q=document.querySelector('.application');
+          var p=0;
+          var t;
+          var y=document.querySelector('.yyy');
+          y.onclick=function(){
+            ta.style.display='block';
+          }
+          for(var i=0;i<Td.length;i++)
+          {
+            Td[i].setAttribute('index',i)
+            Td[i].innerHTML=a;
+            a++;
+            Td[i].onclick=function(){
+              Td[p].style.fontWeight='100';
+              this.style.fontWeight='500';
+              p=this.getAttribute('index');
+              t=this.innerText;
+              console.log(t);
+              y.innerHTML=t;
+              y.style.color='black';
+              ta.style.display='none'
+            }
+          }
+        </script>
+        <div class="email" >
+          <div>输入您的电子邮箱</div>
+          <input type="text" style="width: 170px;" placeholder="邮箱">
+        </div>
+      </div>
+        <button class="bubbly-button" type="submit">提交</button>
+        
+    </div>
+    <div class="application1" style="display: none;">
+      <h4 style="user-select: none;">您已完成报名，开始您的学习之旅吧！</h4>
+      <button>
+        重新报名
+      </button>
+    </div>
+    <div class='tishi' style="display: none;">
+    </div>
+    <script>
+      var inp=document.querySelector('.application').querySelectorAll('input');
+      var pla;
+      for(var i=0;i<inp.length;i++)
+      {
+        inp[i].onfocus=function(){
+          pla=this.placeholder;
+          this.placeholder='';
+          
+        }
+        inp[i].onblur=function(){
+          this.placeholder=pla;
+        }
+      }
+    </script>
+    <div class="content">
+      <h3>我们的宗旨</h3>
+      <div class="first">
+        <div>
+          <h4>自律独立思考</h4>
+          <img src="img/asd.png" class="imga" alt="" />
+        </div>
+        <div>
+          <h4>自律独立思考</h4>
+          <img src="img/asd.png" class="imga" alt="" />
+        </div>
+        <div>
+          <h4>自律独立思考</h4>
+          <img src="img/asd.png" class="imga" alt="" />
+        </div>
+        <div>
+          <h4>自律独立思考</h4>
+          <img src="img/asd.png" class="imga" alt="" />
+        </div>
+      </div>
+      <div><h3>课程安排</h3></div>
+      <div class="taap">
+        
+          <button index='1'>全部</button>
+        
+          <button index='2'>HTML</button>
+        
+          <button index='3'>CSS</button>
+        
+          <button index='4'>JavaScript</button>
+        
+      </div>
+      <div class="clear"></div>
+      <div  class="scroll"> 
+        <div class="course" index='1'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第一课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3">
+                  html
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='2'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第二课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3" style="background-color: #356834;">
+                  css
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='3'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第三课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3" style="width: 100px; background-color: #3f5773;">
+                  JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='4'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第四课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="course4">
+                <div class="titlel">
+                html
+              </div>
+              <div class="titlel">
+                css
+              </div>
+              <div class="titlel">
+                JavaScript
+              </div>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="course" index='1'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第五课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3">
+                  html
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='2'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第六课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3" style="background-color: #356834;">
+                  css
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='3'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第七课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="title3" style="width: 100px; background-color: #3f5773;">
+                  JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course" index='4'>
+          <div>
+            <div class="x">
+              <img src="img/1634201952212163420195232.jpg">
+            </div>
+            <div class="x">
+              <div class="title1">
+                第八课   这里是课程名字
+              </div>
+              <div class="title2">
+                这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，这里是课程内容的概要，
+              </div>
+              <div class="course4">
+                <div class="titlel">
+                html
+              </div>
+              <div class="titlel">
+                css
+              </div>
+              <div class="titlel">
+                JavaScript
+              </div>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var taap = document.querySelector(".taap").querySelectorAll("button");
+        var cou=document.querySelectorAll('.course');
+        var a = 1;
+        for (var i = 0; i < taap.length; i++) {
+          taap[i].onclick = function () {
+            taap[a-1].style.borderBottom = "1px solid black";
+            this.style.borderBottom = "3px solid black";
+            a = this.getAttribute('index');
+            if(a==1)
+            {
+              for(var j=0;j<cou.length;j++)
+              {
+                cou[j].style.display='block';
+              }
+            }else if(a==2)
+            {
+              for(var j=0;j<cou.length;j++)
+              {
+                if(cou[j].getAttribute('index')==1||cou[j].getAttribute('index')==4)
+                {
+                  cou[j].style.display='block';
+                }else{
+                  cou[j].style.display='none';
+                }
+              }
+            }else if(a==3)
+            {
+              for(var j=0;j<cou.length;j++)
+              {
+                if(cou[j].getAttribute('index')==2||cou[j].getAttribute('index')==4)
+                {
+                  cou[j].style.display='block';
+                }else{
+                  cou[j].style.display='none';
+                }
+              }
+            }else if(a==4)
+            {
+              for(var j=0;j<cou.length;j++)
+              {
+                if(cou[j].getAttribute('index')==3||cou[j].getAttribute('index')==4)
+                {
+                  cou[j].style.display='block';
+                }else{
+                  cou[j].style.display='none';
+                }
+              }
+            }
+          };
+        }
+      </script>
+    </div>  
+    <footer>
+      <div class="cricle">
+        <div>I</div>
+        <div>F</div>
+        <div>E</div>
+      </div>
+      <div class="cn">
+        <div>
+          <div class="title4">Links</div>
+          <ul>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+            <li>技术培训中心</li>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+          </ul>
+        </div>
+        <div>
+          <div class="title4">Links</div>
+          <ul>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+            <li>技术培训中心</li>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+          </ul>
+        </div>
+        <div>
+          <div class="title4">Links</div>
+          <ul>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+            <li>技术培训中心</li>
+            <li>百度技术培训中心</li>
+            <li>百度技术</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var tbu=document.querySelector('.bubbly-button');
+    var sch=document.querySelector('.school').querySelector('input');
+    var tim=document.querySelector('.data').querySelector('.yyy');
+    var tishi=document.querySelector('.tishi');
+    var yx=document.querySelector('.email').querySelector('input');
+    var ap=document.querySelector('.application');
+    var ap1=document.querySelector('.application1');
+    var apbtu=ap1.querySelector('button');
+    function isEmail(str){   
+      var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+      return reg.test(str);
+      }
+      
+    function tt(){
+      tishi.style.display='none';
+    }
+    
+      tbu.onclick=function(){
+      var str1=yx.value;
+      console.log(sch.innerHTML);
+      if(tim.innerHTML=='年份')
+      {
+        tishi.innerHTML='未选择年份，请重新选择年份后再次提交';
+        tishi.style.display='block';
+        tishi.className='h';
+        setTimeout('tt()',3000);
+      }else if(sch.value==' ')
+      {
+        tishi.innerHTML='未填写学校，请重新填写后再次提交';
+        tishi.style.display='block';
+        tishi.className='h';
+        setTimeout('tt()',3000);
+      }else if(isEmail(str1)==false)
+      {
+        tishi.innerText='邮箱地址不符合要求（'+str1+'),请重新输入';
+        tishi.style.display='block';
+        tishi.className='h';
+        setTimeout('tt()',3000);
+      }else{
+        tishi.innerHTML='恭喜您，来自 '+sch.value+' '+tim.innerText+'级'+str1+'同学，您的报名信息已记录，请关注您的邮件';
+        tishi.style.display='block';
+        tishi.className='l';
+        ap.style.display='none';
+        ap1.style.display='block';
+        setTimeout('tt()',5000);
+
+      }
+    }
+
+    apbtu.onclick=function(){
+      ap1.style.display='none';
+      ap.style.display='flex';
+      tishi.style.display='none';
+    }
+
+   
+  </script>
+</html>

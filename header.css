@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header {
+  height: 450px;
+  background-image: url(img/wallhaven-45klr8_1920x1080.png);
+}
+
+.tap {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+}
+.logo {
+  height: 60px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.logo img {
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.hearder-menu {
+  float: right;
+  margin-right: 30px;
+}
+.hearder-menu ul li {
+  float: left;
+  text-align: center;
+  margin: 10px 30px;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  font-size: 18px;
+}
+.hearder-menu ul li a {
+  text-decoration: none;
+  color: #edebe8;
+}
+.hearder-menu ul li:hover {
+  border-radius: 10px;
+  background-color: #676767;
+}
+.hearder-menu ul .aaa {
+  border-radius: 10px;
+  background-color: #676767;
+}
+.tap h4 {
+  margin-left: 70px;
+  line-height: 350px;
+  font-size: 75px;
+  color: #edebe8;
+}
+
+.application {
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  height: 200px;
+  width: 800px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 2s;
+}
+.application div {
+  width: 520px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.application div div {
+  width: 160px;
+  display: inline-block;
+}
+.application div input {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  padding-left: 20px;
+  outline: 0;
+}
+.application div input:focus{
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.application div div div {
+  margin-bottom: 7px;
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+}
+.application div .data
+{
+  height: 0;
+  position: relative;
+  top: -33px;
+}
+.application div .data button{
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  color:#757575;
+  text-align: left;
+  padding-left: 20px;
+  outline: 0;
+}
+.application div .data table{
+  user-select: none;
+  display: none;
+  transition: 0.5s;
+  position: absolute;
+  top: 66px;
+  border-radius: 0 0 6px 6px;
+  background-color: white;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  height: 100px;
+  overflow-y: auto;
+}
+.application div .data table td{
+  padding: 5px 10px;
+  padding-left: 15px;
+  font-family: "Noto Sans SC";
+  font-weight: 100;
+  color:black;
+  cursor: pointer;
+}
+.application div .data button:focus{
+  background-color: white;
+  transition: 0.5s;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+a{
+  text-decoration: none;
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+}
+
+table::-webkit-scrollbar{
+  display: none;
+}
+
+.bubbly-button{
+  position: relative;
+  top: 13px;
+  left: -21px;
+  height: 40px;
+  width: 150px;
+  background-color: #2599ee;
+  border:none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white  ;
+}
+
+.l {
+  width: 800px;
+  height: 50px;
+  background-color: #a2ff8c;
+  position: relative;
+  margin: 0 auto;
+  top: -38px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.h{
+  width: 800px;
+  height: 50px;
+  background-color: #ff969a;
+  position: relative;
+  margin: 0 auto;
+  top: -85px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.application1{
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+  height: 100px;
+  width: 800px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  line-height: 100px;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+.application1 button{
+  background-color: white;
+  border: none;
+  color: #757575;
+  letter-spacing: 2px;
+  position: relative;
+  top: -73px;
+  right: -350px;
+  transition: 2s;
+  cursor: pointer;
+
+}
